@@ -1,0 +1,98 @@
+
+* {
+    box-sizing: border-box;
+  }
+  .grid {
+    border: 1px solid #000;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+  }
+  .grid > div {
+    position: relative;
+    border: 2px solid rgb(233 171 88);
+    border-radius: 5px;
+    background-color: rgb(233 171 88 / 50%);
+    padding: 1em;
+    color: #d9480f;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 0px;
+    /* grid-auto-rows: minmax(100px, auto); */
+  }
+  .one {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    height: 50px;
+  }
+  .two {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    width: 50px;
+  }
+
+  .three {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    height: 100px;
+  }
+  .four {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .five {
+    grid-column: 3;
+    grid-row: 3;
+    width: 100px;
+  }
+  .six {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    height: 50px;
+  }
+  
+.v-divider {
+width: 3px;
+height: 100%;
+cursor: ew-resize;
+}
+.h-divider {
+width: 100%;
+height: 3px;
+cursor: ns-resize;
+}
+.v-divider,
+.h-divider {
+    position: absolute;
+background-color: cyan;
+}
+.v-divider.prev {
+    top: 0;
+    left: 0;
+}
+.v-divider.next {
+    top: 0;
+    right: 0;
+}
+.h-divider.prev {
+    top: 0;
+    right: 0;
+}
+.h-divider.next {
+    bottom: 0;
+    left: 0;
+}
+#settings {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    width: 200px;
+    border: 1px solid green;
+}
+.hide {
+    display: none;
+}

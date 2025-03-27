@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  .wrapper > div {
+    position: relative;
+    border: 2px solid rgb(233 171 88);
+    border-radius: 5px;
+    background-color: rgb(233 171 88 / 50%);
+    padding: 1em;
+    color: #d9480f;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+    /* gap: 2px; */
+    /* grid-auto-rows: minmax(100px, auto); */
+  }
+  .one {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    height: 50px;
+  }
+  .two {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    width: 50px;
+  }
+  
+  .three {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    height: 100px;
+  }
+  .four {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .props {
+    grid-column: 3;
+    grid-row: 3;
+    width: 200px;
+  }
+  .six {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    height: 50px;
+  }
+  
+  .v-divider {
+    width: 2px;
+    height: 100%;
+    cursor: ew-resize;
+  }
+  .h-divider {
+    width: 100%;
+    height: 2px;
+    cursor: ns-resize;
+  }
+  .v-divider,
+  .h-divider {
+    position: absolute;
+    background-color: cyan;
+  }
+  .v-divider.prev {
+    top: 0;
+    left: 0;
+  }
+  .v-divider.next {
+    top: 0;
+    right: 0;
+  }
+  .h-divider.prev {
+    top: 0;
+    right: 0;
+  }
+  .h-divider.next {
+    bottom: 0;
+    left: 0;
+  }
+  

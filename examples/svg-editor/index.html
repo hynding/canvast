@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link href="svg-editor.css" rel="stylesheet" />
+    <script type="module" defer src="svg-editor.js"></script>
+  </head>
+  <body>
+    <header>
+        
+    </header>
+    <main>
+        <section id="toolbar">
+            
+        </section>
+        <section id="stage">
+            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+                <defs>
+                    <filter id="svg_1_blur">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="1.3"></feGaussianBlur>
+                    </filter>
+                </defs>
+                <g id="focused-element-properties"></g>
+                <g style="pointer-events:all">
+                    <title style="pointer-events:inherit">Layer 1</title>
+                    <line fill="none" stroke="#000" x1="268" y1="62" x2="163" y2="148" id="svg_1" stroke-linejoin="undefined" stroke-linecap="undefined" filter="url(#svg_1_blur)"></line>
+                    <path fill="none" id="svg_2" 
+                        d="M130.00000190734863,49.999999046325684 C130.00000190734863,49.999999046325684 130.00000190734863,53.17857050895691 127.3333351612091,56.357141971588135 C124.66666841506958,59.53571343421936 119.33333492279053,62.714284896850586 111.33333468437195,70.66071355342865 C103.33333444595337,78.60714221000671 93.81833985899902,87.74255234425618 87.33333396911621,97.67857098579407 C80.2954512723918,108.4616864883028 77.81465692762504,118.55066563628407 74.00000023841858,124.69642841815948 C69.86242687292179,131.36245092654826 68.66666674613953,135.82142853736877 66,137.4107142686844 L66,139 " 
+                        stroke="#000"
+                    ></path>
+                </g>
+            </svg>
+        </section>
+        <section id="settings">
+            <span>X: </span><span id="x_pos"></span>
+            <span>Y: </span><span id="y_pos"></span>
+            <input type="checkbox" id="show-control-points" />
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>

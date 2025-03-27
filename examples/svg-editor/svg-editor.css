@@ -1,0 +1,55 @@
+:root {
+    --header-height: 32px;
+    --toolbar-width: 64px;
+    --settings-width: 256px;
+}
+
+html, body {
+    overscroll-behavior-x: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: var(--header-height);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 500px;
+}
+
+main > section#toolbar {
+    display: flex;
+    flex-direction: column;
+    min-width: var(--toolbar-width);
+    background-color: #333;
+}
+main > section#toolbar > button.selected {
+    border: 1px solid yellow;
+}
+
+main > section#stage {
+    display: flex;
+    flex: 1;
+    background-color: #fff;
+}
+
+main > section#settings {
+    /* display: flex;
+    flex-direction: column; */
+    width: var(--settings-width);
+    background-color: #333;
+}
+
+footer {
+    height: var(--header-height);
+}
+
